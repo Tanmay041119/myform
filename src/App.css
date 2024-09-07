@@ -1,0 +1,47 @@
+.back{
+  background-image: url(./pictures/pexels-pixabay-248874.jpg);
+  
+  object-fit: cover;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Optional: Adjust the container's padding/margin for smaller screens */
+
+
+.login-box {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+input {
+  
+  padding: 10px;  /* Custom styles */
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  
+  border: none;
+  outline: none;
+  color: #454242;
+  font-size: 15px;
+  
+}
+
+/* Placeholder text styling */
+input::placeholder {
+  color: rgb(47, 45, 45); /* Placeholder color */
+  opacity: 1;  /* Ensure full opacity */
+}
+
+/* Change the background color and text color of autofilled input fields */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.3) inset !important; /* Match your input background color */
+  -webkit-text-fill-color: rgb(47, 45, 45) !important; /* Use placeholder color for autofilled text */
+  -webkit-background-clip: padding-box !important; /* Ensure background color is applied correctly */
+  transition: background-color 5000s ease-in-out 0s !important; /* Prevent sudden color change */
+}
+
